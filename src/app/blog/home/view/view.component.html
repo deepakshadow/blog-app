@@ -1,0 +1,30 @@
+<div *ngIf="isLoaded">
+    <app-spinner></app-spinner>
+</div>
+<div class="row text-center" *ngIf="!isLoaded">
+    <div class="col" *ngIf="currentBlog">
+        <h3>{{currentBlog.title | uppercase}}</h3>
+        <p>Created on: {{currentBlog.created | date: 'medium'}}</p>
+        <p [hidden]="currentBlog.tags.length == 0">Tags: <span
+                *ngFor="let tag of currentBlog.tags; let first=first; let last = last">
+                {{tag}}last? '' : ', ';
+            </span></p>
+        <p>Made By: {{currentBlog.author}}</p>
+        <p>Description: {{currentBlog.description}} </p>
+        <p>BlogBody: {{currentBlog.bodyHtml}}</p>
+        <p>Category: {{currentBlog.category}}</p>
+        <p>Last modified on : {{currentBlog.lastModified | date: 'medium'}}</p>
+        <br>
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-warning" (click)="goBack()">Back</button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-success" (click)="goToEdit()">Edit</button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-danger" (click)="onDelete()">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>

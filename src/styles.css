@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d65be220-b1d6-468b-b6b1-4d281a47bde2/ds11mj-bebd7dde-5a3d-4c21-b044-14974b8c0275.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Q2NWJlMjIwLWIxZDYtNDY4Yi1iNmIxLTRkMjgxYTQ3YmRlMlwvZHMxMW1qLWJlYmQ3ZGRlLTVhM2QtNGMyMS1iMDQ0LTE0OTc0YjhjMDI3NS5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.C9CC6uw5I7qDFOqzcWo1TnQvSVOESQ6tcTJuPvHw2k4');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    max-width: 100%;
+    overflow-x: hidden;
+}

@@ -1,10 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'blog-app';
+export class AppComponent implements OnInit {
+
+  isLoaded: boolean = false;
+
+  constructor() {}
+
+  ngOnInit() {
+    this.isLoaded = true;
+    setTimeout(() => {
+      this.isLoaded = false;
+    }, 1000);
+
+  }
 }

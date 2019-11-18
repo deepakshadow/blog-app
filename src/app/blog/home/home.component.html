@@ -1,0 +1,26 @@
+<div *ngIf="isLoaded">
+    <app-spinner></app-spinner>
+</div>
+<div class="container">
+    <div class="row" *ngIf="!isLoaded">
+        <div class="col" *ngIf="allBlogs?.length != 0">
+            <h3><strong>All Blogs</strong></h3>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-12 col-xs-8 col-sm-6 col-md-4" *ngFor="let blog of allBlogs">
+            <div class="card">
+                <img src="https://blogmedia.evbstatic.com/wp-content/uploads/wpmulti/sites/3/2017/10/30123904/creative-event-promotion-ideas1.png" class="card-img-top"
+                    alt="random internet picture">
+                <div class="card-body">
+                    <h4 class="card-title">{{blog.title}}</h4>
+                    <p class="card-text"><em>By {{blog.author}}</em></p>
+                    <a class="btn btn-info" [routerLink]="[blog.blogId]">Read</a>
+                </div>
+            </div>
+            <br>
+        </div>
+        <br>
+    </div>
+</div>

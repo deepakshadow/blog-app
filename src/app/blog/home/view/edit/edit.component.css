@@ -1,0 +1,13 @@
+input.ng-invalid.ng-touched {
+    border: 2px solid red;
+}
+
+input.ng-valid {
+    border: 2px solid green;
+}
+
+.feedback {
+    padding-top: 2px;
+    color: red;
+    font-style: italic;
+}
