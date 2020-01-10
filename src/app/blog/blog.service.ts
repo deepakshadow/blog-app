@@ -9,7 +9,7 @@ import { catchError } from 'rxjs/operators';
 export class BlogService {
 
   private baseUrl: string = "https://blogapp.edwisor.com/api/v1/blogs";
-  private authToken: string = "MTAwN2U4ZDdmZDdhZTNhZjQ2ZTgwN2NiYTdmODAzYjY5YWU2MmJjM2NkMmJjNDIzNTE2YjFkY2QxMTQxYzYwNzE1OGExOTc2NGEyYzc3YzdmNjBmYzE1NWEzNDAwMmJkMGIxYTg4ZTBkODA2NTdkMjA1YjBmZTNjZWIwNGI5YTAwYQ==";
+  private authToken: string = "YmQ1Nzk4NGJmYmFjMWQ1NTlhYTdhMWY4OTM5NDg2M2VlZjM4YWMwYjY2MjIyOTBhZmYyNTc5OGQ1NzhlNDc1OTE4ZGY2OTA4NmM3MGVjYTg1NmU5N2Q4MWFiNmJhODYyMzlhYmM5NzViMTgyNmM2NDQ3NmMyNTk5YTQ3OWVmMjY3NA==";
 
   constructor(private _http: HttpClient) { }
 
